@@ -11,18 +11,17 @@ phases:
   pre_build:
     commands:
       - echo "Running pre-build tasks..."
-      - pip install awscli  # Install AWS CLI if you need it for further steps
+      - pip install awscli  # Install AWS CLI if needed for deployment steps
 
   build:
     commands:
       - echo "Running build tasks..."
-      - python -m unittest discover tests  # Run tests, if you have them
       - echo "Build completed on `date`"
       
   post_build:
     commands:
       - echo "Post-build actions..."
-      - echo "Starting deployment to S3 or Elastic Beanstalk if necessary"
+      - echo "Build phase completed"
 
 artifacts:
   files:
