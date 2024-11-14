@@ -1,0 +1,9 @@
+tensorflow
+numpy
+pandas
+scikit-learn
+keras
+matplotlib
+seaborn
+flask
+wordcloud
